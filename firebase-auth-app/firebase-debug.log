@@ -1,0 +1,170 @@
+[debug] [2024-10-09T06:12:46.067Z] ----------------------------------------------------------------------
+[debug] [2024-10-09T06:12:46.070Z] Command:       C:\Program Files\nodejs\node.exe c:\Users\sachu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-10-09T06:12:46.070Z] CLI Version:   13.22.0
+[debug] [2024-10-09T06:12:46.071Z] Platform:      win32
+[debug] [2024-10-09T06:12:46.071Z] Node Version:  v20.15.1
+[debug] [2024-10-09T06:12:46.071Z] Time:          Wed Oct 09 2024 11:42:46 GMT+0530 (India Standard Time)
+[debug] [2024-10-09T06:12:46.071Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-09T06:12:46.126Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-09T06:12:46.127Z] > authorizing via signed-in user (sachuonline2.0@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\sachu\OneDrive\Documents\firebase-auth-app
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-10-09T06:13:02.451Z] Using project from CLI flag: property-tax-app-61054
+[debug] [2024-10-09T06:13:02.452Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:02.452Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:02.453Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/property-tax-app-61054 [none]
+[debug] [2024-10-09T06:13:03.250Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/property-tax-app-61054 200
+[debug] [2024-10-09T06:13:03.250Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/property-tax-app-61054 {"projectId":"property-tax-app-61054","projectNumber":"103679779781","displayName":"Property Tax App","name":"projects/property-tax-app-61054","resources":{"hostingSite":"property-tax-app-61054"},"state":"ACTIVE","etag":"1_19c003bf-984c-4a27-a3a9-e31e8c888892"}
+[info] i  Using project property-tax-app-61054 (Property Tax App) 
+[info] 
+=== Firestore Setup
+[debug] [2024-10-09T06:13:03.255Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:03.256Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:03.256Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/property-tax-app-61054/services/firestore.googleapis.com [none]
+[debug] [2024-10-09T06:13:03.256Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/property-tax-app-61054/services/firestore.googleapis.com x-goog-quota-user=projects/property-tax-app-61054
+[debug] [2024-10-09T06:13:05.404Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/property-tax-app-61054/services/firestore.googleapis.com 200
+[debug] [2024-10-09T06:13:05.404Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/property-tax-app-61054/services/firestore.googleapis.com [omitted]
+[debug] [2024-10-09T06:13:05.404Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:05.404Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:05.404Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/property-tax-app-61054/databases/(default) [none]
+[debug] [2024-10-09T06:13:07.407Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/property-tax-app-61054/databases/(default) 200
+[debug] [2024-10-09T06:13:07.407Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/property-tax-app-61054/databases/(default) {"name":"projects/property-tax-app-61054/databases/(default)","uid":"04d39d07-dc64-4155-be5c-7693442a025b","createTime":"2024-10-09T06:08:15.141657Z","updateTime":"2024-10-09T06:08:15.141657Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-10-09T06:08:15.141657Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IJjsjK7SgIkDMJn256LRgIkD"}
+[debug] [2024-10-09T06:13:07.407Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-10-09T06:13:07.407Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-10-09T06:13:07.407Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-09T06:13:07.407Z] > authorizing via signed-in user (sachuonline2.0@gmail.com)
+[debug] [2024-10-09T06:13:07.407Z] [iam] checking project property-tax-app-61054 for permissions ["firebase.projects.get"]
+[debug] [2024-10-09T06:13:07.408Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:07.408Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:07.408Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/property-tax-app-61054:testIamPermissions [none]
+[debug] [2024-10-09T06:13:07.408Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/property-tax-app-61054:testIamPermissions x-goog-quota-user=projects/property-tax-app-61054
+[debug] [2024-10-09T06:13:07.408Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/property-tax-app-61054:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-10-09T06:13:09.247Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/property-tax-app-61054:testIamPermissions 200
+[debug] [2024-10-09T06:13:09.247Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/property-tax-app-61054:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-10-09T06:13:14.861Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:14.861Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:14.861Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/property-tax-app-61054/releases pageSize=10&pageToken=
+[debug] [2024-10-09T06:13:16.655Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/property-tax-app-61054/releases 200
+[debug] [2024-10-09T06:13:16.655Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/property-tax-app-61054/releases {"releases":[{"name":"projects/property-tax-app-61054/releases/cloud.firestore","rulesetName":"projects/property-tax-app-61054/rulesets/56a52311-0d5f-4d8f-9cec-6307c965ad77","createTime":"2024-10-09T06:08:27.740577Z","updateTime":"2024-10-09T06:08:27.740577Z"}]}
+[debug] [2024-10-09T06:13:16.655Z] Found ruleset: projects/property-tax-app-61054/rulesets/56a52311-0d5f-4d8f-9cec-6307c965ad77
+[debug] [2024-10-09T06:13:16.656Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:16.656Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:16.656Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/property-tax-app-61054/rulesets/56a52311-0d5f-4d8f-9cec-6307c965ad77 [none]
+[debug] [2024-10-09T06:13:18.108Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/property-tax-app-61054/rulesets/56a52311-0d5f-4d8f-9cec-6307c965ad77 200
+[debug] [2024-10-09T06:13:18.108Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/property-tax-app-61054/rulesets/56a52311-0d5f-4d8f-9cec-6307c965ad77 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-10-09T06:13:22.477Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:22.477Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:22.477Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:22.477Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:22.477Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/property-tax-app-61054/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-10-09T06:13:22.479Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/property-tax-app-61054/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-10-09T06:13:24.533Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/property-tax-app-61054/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-10-09T06:13:24.533Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/property-tax-app-61054/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-10-09T06:13:24.675Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/property-tax-app-61054/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-10-09T06:13:24.675Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/property-tax-app-61054/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/property-tax-app-61054/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Hosting Setup
+[debug] [2024-10-09T06:13:24.678Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:24.678Z] Checked if tokens are valid: true, expires at: 1728457551083
+[debug] [2024-10-09T06:13:24.678Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/property-tax-app-61054 [none]
+[debug] [2024-10-09T06:13:25.353Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/property-tax-app-61054 200
+[debug] [2024-10-09T06:13:25.354Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/property-tax-app-61054 {"projectId":"property-tax-app-61054","projectNumber":"103679779781","displayName":"Property Tax App","name":"projects/property-tax-app-61054","resources":{"hostingSite":"property-tax-app-61054"},"state":"ACTIVE","etag":"1_19c003bf-984c-4a27-a3a9-e31e8c888892"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-10-09T06:13:40.012Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-10-09T06:13:40.258Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-10-09T06:13:40.258Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.14.0","browserURL":"https://www.gstatic.com/firebasejs/10.14.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.14.0/firebase.tgz"},"live":{"version":"10.14","browserURL":"https://www.gstatic.com/firebasejs/live/10.14/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.14/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.14.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.14.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.14.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.14.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.14.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.14.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.14.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.14.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.14.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.14.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.14.0/firebase-database.js","data-connect":"https://www.gstatic.com/firebasejs/10.14.0/firebase-data-connect.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.14.0/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\sachu\OneDrive\Documents\firebase-auth-app is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=960569076&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-10-09T06:13:44.280Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-10-09T06:13:44.280Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-10-09T06:13:44.844Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-10-09T06:13:44.844Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-10-09T06:13:44.848Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-10-09T06:13:45.401Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-10-09T06:13:45.401Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Sachin-deepak","id":128951506,"node_id":"U_kgDOB6-k0g","avatar_url":"https://avatars.githubusercontent.com/u/128951506?v=4","gravatar_id":"","url":"https://api.github.com/users/Sachin-deepak","html_url":"https://github.com/Sachin-deepak","followers_url":"https://api.github.com/users/Sachin-deepak/followers","following_url":"https://api.github.com/users/Sachin-deepak/following{/other_user}","gists_url":"https://api.github.com/users/Sachin-deepak/gists{/gist_id}","starred_url":"https://api.github.com/users/Sachin-deepak/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Sachin-deepak/subscriptions","organizations_url":"https://api.github.com/users/Sachin-deepak/orgs","repos_url":"https://api.github.com/users/Sachin-deepak/repos","events_url":"https://api.github.com/users/Sachin-deepak/events{/privacy}","received_events_url":"https://api.github.com/users/Sachin-deepak/received_events","type":"User","site_admin":false,"name":"Sachin Deepak","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":6,"public_gists":0,"followers":0,"following":0,"created_at":"2023-03-26T04:12:23Z","updated_at":"2024-10-01T07:50:54Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":198,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Sachin-deepak 
+[info] 
+[debug] [2024-10-09T06:13:52.607Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-10-09T06:13:53.076Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2024-10-09T06:13:53.076Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-10-09T06:14:01.977Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-10-09T06:14:02.491Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2024-10-09T06:14:02.491Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-10-09T06:14:04.054Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-10-09T06:14:04.407Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2024-10-09T06:14:04.407Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-10-09T06:14:27.229Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-10-09T06:14:28.555Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2024-10-09T06:14:28.555Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
